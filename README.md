@@ -8,7 +8,7 @@ authentication to allow users to log in to the site.</h3>
 
 </div>
 <br />
-<div align="center">Technologies used in the e-commerce app development:
+<div align="center"><h3>Technologies used in the e-commerce app development:</h3>
 <ul align="center">
   <li>ReactJS</li>
   <li>ExpressJS</li>
