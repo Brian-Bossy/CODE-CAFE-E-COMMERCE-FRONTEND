@@ -11,16 +11,36 @@ function Orders({ items }) {
  
 const { currentUser } = useCurrentUserContext();
 
-  const loadOrders = () => {
-    axios.get('/api/orders')
-    .then((result) => setOrders(result.data))
-    .catch(console.error)
-  }
+ 
 
 useEffect(() => {
   if (currentUser.access === 'associate') {
- loadOrders();
+
+//adding websocket connection
+
+const ws = new WebSocket(`${(
+  window.location.protocol === 'https:' ? 'wss://' : 'ws://'
+  )}${window.location.host}/ws-cafe`);
+  //initial connection
+  ws.onopen = () => {
+  console.log('connected');
+  };
+  //error connecting
+  ws.onerror = (event) => {
+  console.error(event);
+  };
+  //gets a message
+  ws.onmessage = (message) => {
+  const newOrders = JSON.parse(message.data);
+  setOrders(newOrders);
+  };
+  //disconnects
+  ws.onclose = () => {
+  console.log('disconnected');
+  };
+ 
  return () => {
+  ws.close();
   setOrders([]);
  };
   }
