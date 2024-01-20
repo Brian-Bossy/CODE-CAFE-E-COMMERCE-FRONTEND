@@ -10,9 +10,9 @@ authentication to allow users to log in to the site.</h3>
 <br />
 <div align="center"><h3>Technologies used in the e-commerce app development:</h3>
 <ul align="left">
-  <li>ReactJS</li>
-  <li>ExpressJS</li>
-  <li>NodeJS</li>
+  <li>React.JS</li>
+  <li>Express.JS</li>
+  <li>Node.JS</li>
   <li>Rest Api</li>
 </ul>
 </div>
