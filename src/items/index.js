@@ -1,13 +1,13 @@
-import Croissant from './croissant.jpg';
-import Coffee from './coffee.jpg';
-import Cookie from './cookie.jpg';
-import Cupcake from './cupcake.jpg';
-import FrenchPress from './french-press.jpg';
-import IcedCoffee from './iced-coffee.jpg';
-import Latte from './latte.jpg';
-import Milk from './milk.jpg';
-import Sandwich from './sandwich.jpg';
-import Tea from './tea.jpg';
+import Croissant from './croissant.svg';
+import Coffee from './coffee.svg';
+import Cookie from './cookie.svg';
+import Cupcake from './cupcake.svg';
+import FrenchPress from './french-press.svg';
+import IcedCoffee from './iced-coffee.svg';
+import Latte from './latte.svg';
+import Milk from './milk.svg';
+import Sandwich from './sandwich.svg';
+import Tea from './tea.svg';
 
 export const itemImages = {
   coffee: Coffee,

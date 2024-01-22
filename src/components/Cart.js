@@ -1,6 +1,6 @@
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import { useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import ItemType from '../types/items';
 import CartRow from './CartRow';
 import './stylesheets/Cart.css';
@@ -24,8 +24,16 @@ function Cart({ cart, dispatch, items }) {
     return item.quantity * itemPrice + acc;
   }, 0);
 
+
+  // we use useMemo to wrap the tax compute function which returns the tax rate so that it renders when there is only a change in the zipCode 
+  const taxRate = useMemo(
+    () => {
+  console.log('compute tax');
   const taxPercentage = parseInt(zipCode.substring(0, 1) || '0', 10) + 1;
-  const taxRate = taxPercentage / 100;
+ return taxPercentage /100;
+    },
+    [zipCode],
+  )
   const tax = subTotal * taxRate;
   const total = subTotal + tax;
   const isFormValid = zipCode.length === 5 && name.trim();
