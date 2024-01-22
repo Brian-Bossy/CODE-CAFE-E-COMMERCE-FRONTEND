@@ -22,14 +22,14 @@ function UserDetails() {
   ? (
   <div>
  {currentUser.access === 'associate'
- ? <Link to="/orders">Orders</Link>
+ ? <Link to="/orders" style={{textDecoration: 'none'}}>Orders</Link>
  : null}
 
   <img src={Profile} alt="profile" />
   <p>{currentUser.username}</p>
-  <button type="button" onClick={logout}>Log Out</button>
+  <button type="button" onClick={logout} >Log Out</button>
   </div>
-  ) : <Link to="/login">Log In</Link> }
+  ) : <Link to="/login" style={{textDecoration: 'none'}}>Log In</Link> }
   </div>
   );
   }
