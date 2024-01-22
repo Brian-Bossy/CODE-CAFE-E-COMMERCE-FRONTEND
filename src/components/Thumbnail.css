@@ -7,21 +7,18 @@
 }
 
 .thumbnail-component div {
-  background-color: #222;
+  background-color: #B9A28D;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 30px;
+  padding: 20px 40px;
 }
 
 .thumbnail-component img {
-  border: 2px solid #fff;
-  height: 170px;
-  width: 170px;
-  transition: transform 333ms ease, box-shadow 333ms ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  height: 106px;
+  width: 106px;
+  transition: transform 333ms ease;
 }
 
 .thumbnail-component p {
@@ -29,11 +26,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 0;
+  margin: 9px 0 0;
   font-size: 21px;
   text-align: center;
   white-space: nowrap;
-  font-weight: bold;
 }
 
 .thumbnail-component:hover img {
