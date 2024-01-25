@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import Thumbnail from './Thumbnail';
 import { itemImages } from '../items';
+import 'animate.css/animate.min.css';
 import './Home.css';
 import ItemType from '../types/items';
+
 
 function Home({ items }) {
   return (
@@ -15,6 +17,7 @@ function Home({ items }) {
           title={item.title}
         />
       ))}
+      
     </div>
   );
 }

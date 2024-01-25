@@ -5,7 +5,7 @@ import './Thumbnail.css';
 function Thumbnail({ itemId, image, title }) {
   return (
     <Link
-      className="thumbnail-component"
+      className="thumbnail-component "
       to={`/details/${itemId}`}
     >
       <div>

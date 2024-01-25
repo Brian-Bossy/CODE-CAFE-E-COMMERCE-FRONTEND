@@ -1,6 +1,7 @@
 .cart-component {
   padding: 0 20px;
   font-size: 18px;
+ 
 }
 
 .cart-component h2 {
@@ -77,6 +78,7 @@
   color: red;
 }
 
+
 @media (min-width: 768px) {
   .cart-component {
     padding: 0 50px;
@@ -85,4 +87,6 @@
   .cart-component input {
     width: 50%;
   }
+
+
 }

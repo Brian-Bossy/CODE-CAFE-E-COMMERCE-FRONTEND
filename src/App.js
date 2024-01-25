@@ -15,6 +15,7 @@ import {
 import CurrentUserContext from './contexts/CurrentUserContext'
 import Login from './components/Login';
 import Orders from './components/Orders';
+import Footer from './components/Footer';
 
 const storageKey = 'cart';
 
@@ -68,7 +69,10 @@ useEffect(() => {
       >
       <Header cart={cart} />
       {items.length === 0 ? (
-        <div>Feel at ease, as it loads...</div>
+        <div>Loading ...
+          {/* <ScatterBoxLoader /> */}
+          {/* {<SunSpotLoader />} */}
+        </div>
       ) : (
         <Routes>
           <Route
@@ -83,13 +87,17 @@ useEffect(() => {
             <Route index element={<div>No Item Selected</div>} />
           </Route>
           <Route path="/" element={<Home items={items} />} />
+    
           <Route path="/login" element={<Login />} />
           <Route path="/orders" element={<Orders items={items} />} />
           <Route path="*" element={<NotFound />} />
+         
         </Routes>
       )}
+    <Footer />
       </CurrentUserContext.Provider>
     </Router>
+    
   );
 }
 

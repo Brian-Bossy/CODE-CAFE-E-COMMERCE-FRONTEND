@@ -22,6 +22,7 @@
 
 .header-component p {
     color: #674836;
+
 }
 
 .header-component a {
@@ -48,6 +49,7 @@
 .header-component .menu img {
     height: 40px;
     width: 40px;
+  
 }
 
 .header-component .menu a > img {
@@ -61,7 +63,6 @@
     border-radius: 100%;
     font-size: 14px;
     background-color: #CC8B18;
-    color: #FFF;
     font-weight: normal;
     right: 2px;
     top: calc(50% - 22px);

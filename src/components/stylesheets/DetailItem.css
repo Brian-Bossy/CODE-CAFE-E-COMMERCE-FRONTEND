@@ -37,6 +37,7 @@
     margin: 20px 0;
     border: none;
     cursor: pointer;
+    font-family: roboto;
 }
 
 .detail-item-component button:hover {

@@ -6,7 +6,8 @@
   margin-bottom: 10px;
   box-shadow: 0px 9px 13px rgb(0 0 0 / 5%);
   padding: 0 20px;
-  /* background: #222222 ; */
+  background: #bce3 ;
+  font-family: roboto, sans-serif;
 }
 
 .header-component img {
@@ -61,8 +62,8 @@
   width: 18px;
   border-radius: 100%;
   font-size: 14px;
-  background-color: #CC8B18;
-  color: #FFF;
+  background-color: #CC8B18; 
+  color: #fff;
   font-weight: normal;
   right: 2px;
   top: calc(50% - 22px);
