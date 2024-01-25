@@ -3,6 +3,8 @@ import UserDetails from './UserDetails';
 import PropTypes from 'prop-types';
 import CoffeeLogo from '../images/logo.svg';
 import CartIcon from '../images/cart.svg';
+import 'hover.css/css/hover-min.css';
+
 import './Header.css';
 
 function Header({ cart }) {
@@ -11,6 +13,7 @@ function Header({ cart }) {
     <header className="header-component">
       <Link to="/">
         <img src={CoffeeLogo} alt="coffee logo" />
+       
         <h1>Brian's Café</h1>
       </Link>
       <div className="menu">
@@ -19,6 +22,7 @@ function Header({ cart }) {
           <div className="badge">{cartQuantity}</div>
         </Link>
         <UserDetails />
+     
       </div>
     </header>
   );

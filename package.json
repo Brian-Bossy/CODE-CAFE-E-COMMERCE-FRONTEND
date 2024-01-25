@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
+    "hover.css": "^2.3.2",
     "http-proxy-middleware": "^2.0.6",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",

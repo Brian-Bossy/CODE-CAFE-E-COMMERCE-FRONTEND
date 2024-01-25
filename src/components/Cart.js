@@ -28,7 +28,7 @@ function Cart({ cart, dispatch, items }) {
   // we use useMemo to wrap the tax compute function which returns the tax rate so that it renders when there is only a change in the zipCode 
   const taxRate = useMemo(
     () => {
-  console.log('compute tax');
+
   const taxPercentage = parseInt(zipCode.substring(0, 1) || '0', 10) + 1;
  return taxPercentage /100;
     },

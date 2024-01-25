@@ -10,6 +10,7 @@
     overflow: hidden;
     padding: 10px;
     box-sizing: border-box;
+    font-family: roboto, sans-serif;
 }
 
 .alert-component.visible {
