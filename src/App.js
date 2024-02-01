@@ -47,7 +47,7 @@ useEffect(() => {
 
   useEffect(() => {
     axios
-      .get("/api/items")
+      .get("https://brian-code-cafe-backend.onrender.com")
       .then((result) => setItems(result.data))
       .catch(console.error);
   }, []);
