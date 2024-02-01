@@ -1,16 +1,12 @@
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 
 function Footer() {
   return (
-    <div className="Footer-component">
-     
-   <div className="footer-social-links">
-    <Link to="#" style={{color: "black", textDecoration: 'none'}}>About Us</Link>
-    <Link to="#" style={{color: 'black', textDecoration: 'none'}}>Contact Us</Link>
-    <Link to="#" style={{color: 'black', textDecoration: 'none'}}>Terms of Service</Link>
-   </div>
-
+    <div className="Footer-component" data-aos="fade in">
 
    <div className='footer-social-media'>
         <Link to="/" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
@@ -29,7 +25,7 @@ function Footer() {
 
    <div className="footer-words">
       <p>&copy; Copyright2024</p>
-    <p>Built with &#x2661; by <Link to="/" target="_blank" style={{color: 'green'}}>Brian Bossy</Link></p>
+    <p>Built with &#x2661; by <Link to="/" target="_blank" style={{color: 'blue'}}>Brian Bossy</Link></p>
       </div>
 
     </div>

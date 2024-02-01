@@ -16,6 +16,7 @@ import CurrentUserContext from './contexts/CurrentUserContext'
 import Login from './components/Login';
 import Orders from './components/Orders';
 import Footer from './components/Footer';
+import Reviews from "./components/Reviews";
 
 const storageKey = 'cart';
 
@@ -63,6 +64,7 @@ useEffect(() => {
   );
 
   return (
+  
     <Router>
       <CurrentUserContext.Provider
       value={CurrentUserContextValue}
@@ -91,13 +93,16 @@ useEffect(() => {
           <Route path="/login" element={<Login />} />
           <Route path="/orders" element={<Orders items={items} />} />
           <Route path="*" element={<NotFound />} />
-         
+          
         </Routes>
       )}
+     
     <Footer />
       </CurrentUserContext.Provider>
+     
     </Router>
-    
+  
+  
   );
 }
 
