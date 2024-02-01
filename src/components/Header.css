@@ -6,7 +6,7 @@
   margin-bottom: 10px;
   box-shadow: 0px 9px 13px rgb(0 0 0 / 5%);
   padding: 0 20px;
-  background: #bce3 ;
+  background: #bce3;
   font-family: roboto, sans-serif;
 }
 
@@ -50,6 +50,7 @@
 .header-component .menu img {
   height: 40px;
   width: 40px;
+  
 }
 
 .header-component .menu a > img {
@@ -62,7 +63,7 @@
   width: 18px;
   border-radius: 100%;
   font-size: 14px;
-  background-color: #CC8B18; 
+  background-color: #222; 
   color: #fff;
   font-weight: normal;
   right: 2px;

@@ -5,6 +5,7 @@
   padding: 32px 20px;
   background: #f2f2f2 ;
   font-family: roboto, sans-serif;
+  border-radius: 16px;
 }
 
  .home-component .thumbnail-component:nth-child(3n + 2) div {

@@ -4,10 +4,16 @@ import { itemImages } from '../items';
 import 'animate.css/animate.min.css';
 import './Home.css';
 import ItemType from '../types/items';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import Reviews from './Reviews';
+
 
 
 function Home({ items }) {
+  AOS.init();
   return (
+    <>
     <div className="home-component">
       {items.map((item) => (
         <Thumbnail
@@ -19,6 +25,8 @@ function Home({ items }) {
       ))}
       
     </div>
+    <Reviews />
+    </>
   );
 }
 
